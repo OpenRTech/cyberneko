@@ -42,7 +42,7 @@ def getRandomWallhavenArts(wallhavenTag, wallhavenlastPage):
 
 
 def start(update, context):
-    randomImage = getRandomWallhavenArts("160", 47)
+    randomImage = getRandomWallhavenArts("animal ears", 47)
     context.bot.sendPhoto(chat_id=update.message.chat_id, photo=randomImage, caption=randomImage, disable_notification=True)
 
 start_handler = CommandHandler('start', start)
