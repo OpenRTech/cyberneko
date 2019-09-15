@@ -32,7 +32,7 @@ def getRandomWallhavenArts(wallhavenTag, wallhavenlastPage):
     randomPage = randrange(wallhavenlastPage)
     randomImage = randrange(23) # wallhaven does have 24 pictures on page
 
-    wallhavenUrl = 'https://wallhaven.cc/api/v1/search?q=id:' + wallhavenTag + '&purity=100&seed' + randomPageSeed + '&category=anime&sorting=favorites&page=' + str(randomPage)
+    wallhavenUrl = 'https://wallhaven.cc/api/v1/search?q=id:' + wallhavenTag + '&purity=100&seed=' + randomPageSeed + '&category=anime&sorting=favorites&page=' + str(randomPage)
 
     wallhavenPage = requests.get(wallhavenUrl)
     wallhavenJson = wallhavenPage.json()
