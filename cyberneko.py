@@ -10,9 +10,6 @@ import time
 import config
 
 
-### TypeError: error() missing 1 required positional argument: 'error'
-
-
 ###
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
