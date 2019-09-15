@@ -16,7 +16,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 def error(bot, update, error):
-    logger.warning('"%s" caused error "%s"', update, error)
+    logger.error('"%s" caused error "%s"', update, error)
 
 ###
 
